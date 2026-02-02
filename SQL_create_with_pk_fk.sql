@@ -1,3 +1,4 @@
+--Establishes primary key
 CREATE TABLE users (
 user_id integer PRIMARY KEY NOT NULL,
 firstname TEXT, 
@@ -13,6 +14,7 @@ SELECT *
 FROM users
 LIMIT 5;
 
+--Establishes primary key
 CREATE TABLE products (
 product_id integer PRIMARY KEY NOT NULL,
 product_name varchar(60),
@@ -26,6 +28,7 @@ SELECT *
 FROM products
 LIMIT 5;
 
+--Establishes pk and foreign keys to create the sample relational database
 CREATE TABLE subscriptions (
 subscription_id integer PRIMARY KEY NOT NULL,
 user_id integer REFERENCES users (user_id),
