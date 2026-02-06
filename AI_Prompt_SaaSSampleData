@@ -1,12 +1,16 @@
-Treat this as a standalone request. Do not use any prior context or previous conversations \
-\
-Create a realistic synthetic dataset that represents real-world data for a SaaS Subscription-based industry. Subscriptions can be monthly or paid annually (for a 20% discount). The purpose of these datasets is so I can create a portfolio project that demonstrates SQL proficiency (using pgAdmin) by performing data cleaning and transformations, fixing the data schema, running an analysis and providing insights and recommendations using tableau public. Please ensure that I will be able to do the following requests based on the datasets created. Ensure datasets include some variations in capitalization (for text fields), variations in formatting, some null values, and other common issues found in datasets that require cleaning and transformation. \
-\
-I don't want categories to be distributed perfectly evenly. I want the datasets to be as representative of a realistic dataset as possible. \
-\
-All the ID categories should be random numbers without any letters. \
-All tables need to be downloadable by CSV. \
-Create the following tables, columns and factor in the listed constraints: \
-Table1 = Users Columns: user_id (primary key), visits (#), clicks (#), status (active/inactive), firstname, created_date (timestamp) Include any additional columns that make sense Users should have 5,000 rows. Not all users are paid subscribers. Many are free/trial subscribers. \
-Table2 = Products Columns: product_id (primary key), product_name (free/limited, personal, business/team, enterprise), price_monthly, annual_disc_amount, description, Include any additional columns that make sense \
+Description: 
+Prompt provided to ChatGPT to create the sample dataset used to create the database and SaaS portfolio project. Generated data to avoid any security risks or accidental exposure of actual user data from real datasets.
+
+Prompt:
+Treat this as a standalone request. Do not use any prior context or previous conversations 
+
+Create a realistic synthetic dataset that represents real-world data for a SaaS Subscription-based industry. Subscriptions can be monthly or paid annually (for a 20% discount). The purpose of these datasets is so I can create a portfolio project that demonstrates SQL proficiency (using pgAdmin) by performing data cleaning and transformations, fixing the data schema, running an analysis and providing insights and recommendations using tableau public. Please ensure that I will be able to do the following requests based on the datasets created. Ensure datasets include some variations in capitalization (for text fields), variations in formatting, some null values, and other common issues found in datasets that require cleaning and transformation. 
+
+I don't want categories to be distributed perfectly evenly. I want the datasets to be as representative of a realistic dataset as possible. 
+
+All the ID categories should be random numbers without any letters. 
+All tables need to be downloadable by CSV. 
+Create the following tables, columns and factor in the listed constraints: 
+Table1 = Users Columns: user_id (primary key), visits (#), clicks (#), status (active/inactive), firstname, created_date (timestamp) Include any additional columns that make sense Users should have 5,000 rows. Not all users are paid subscribers. Many are free/trial subscribers. 
+Table2 = Products Columns: product_id (primary key), product_name (free/limited, personal, business/team, enterprise), price_monthly, annual_disc_amount, description, Include any additional columns that make sense 
 Table3 = Subscriptions Columns: subscription_id (primary key), user_id (foreign key), product_id (foreign key), signup_date, purchase_date (may have many null values), billing_period (monthly/annual), annual_discount(boolean), churn_date, trial_period_days Include any additional columns that make sense All subscriptions should connect to a user_id and product_id in the respective users and products tables
