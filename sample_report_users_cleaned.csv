@@ -1,0 +1,21 @@
+"user_id","firstname","visits","clicks","created_date","country","marketing_opt_in","is_active"
+715068,Alex,19,37,2026-01-08 22:44:38.428,,false,true
+246837,Pat,11,28,2026-01-08 22:44:38.428,UK,false,false
+126755,Jess,16,22,2026-01-08 22:44:38.426,UK,false,false
+417075,Robin,13,40,2026-01-08 22:44:38.426,US,false,true
+283999,Pat,8,27,2026-01-08 22:44:38.423,US,false,true
+302683,Avery,10,36,2026-01-08 22:44:38.423,US,,false
+193900,Robin,10,23,2026-01-07 22:44:38.426,CA,false,true
+185268,Casey,16,32,2026-01-07 22:44:38.423,DE,true,false
+910458,Blake,12,31,2026-01-06 22:44:38.426,US,false,true
+204396,Pat,10,36,2026-01-05 22:44:38.427,US,true,false
+830713,Sky,15,25,2026-01-05 22:44:38.426,US,true,false
+751730,Morgan,14,44,2026-01-05 22:44:38.425,US,true,true
+406170,Avery,14,36,2026-01-05 22:44:38.422,US,false,true
+923809,Jess,14,27,2026-01-05 22:44:38.421,US,true,true
+361096,Sky,11,37,2026-01-04 22:44:38.422,UK,false,false
+545031,Quinn,13,37,2026-01-04 22:44:38.421,US,false,true
+636093,Casey,14,27,2026-01-03 22:44:38.428,US,false,false
+338039,Chris,10,29,2026-01-03 22:44:38.427,US,,false
+329804,Riley,14,36,2026-01-03 22:44:38.426,US,false,true
+328705,Lee,12,29,2026-01-03 22:44:38.426,,false,true
