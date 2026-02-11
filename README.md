@@ -9,3 +9,4 @@ Dataset was generated using AI prompts, requesting that data generated mimic rea
 - Referential Integrity, 1NF, 2NF
 - Update/Alter table
 - Clean/Transformation queries
+- Data migration
