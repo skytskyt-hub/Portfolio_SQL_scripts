@@ -1,0 +1,15 @@
+/* original prompt produced issues with churn_date being in the future. This is a prompt revision to produce more realistic data, though there are still some small issues with the output, which will be corrected via data transformations */
+
+Revise the subscriptions csv file based on the following logic (be sure to randomize so some values that fit the criteria are null, which assumes that the customer is continuing a subscription)
+
+1. Add timestamp values to the churn_date column based on this logic: 
+if billing_period = monthly AND now() >= purchase_date + 30 days, return either a null value (for continuing subscribers) or a churn_date <= now() AND churn_date >= purchase_date + 30 days
+Vary the subscription duration for monthly subscribers to be between 1 month and 18 months before churning 
+
+2. If billing_period = annual AND now() >= purchase_date + 1 year, return either a null value (for continuing subscribers) OR a churn_date <= now() AND churn_date >= purchase_date + 1 year 
+Vary the subscription duration for annual subscribers to be between 1 and 3 years
+
+3. Add a new column called last_payment_date and populate based on the following logic: 
+if billing_period is monthly AND churn_date = null AND now() > purchase_date + 60 days, return a last_payment_date that is purchase_date + 30 days. 
+Continue with that logic for current monthly customers if churn_date is not null, determine what the last active monthly billing cycle date would have been and add that 
+If billing_period = annual and churn_date = null and now() >= purchase_date + 1 year, add the last_payment_date as purchase_date + 1 year. If churn_date is not null, determine what the last active annual billing date would have been and add that
