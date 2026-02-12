@@ -3,6 +3,8 @@ SQL scripts written for SaaS product portfolio project (queries unrelated to ana
 Dataset was generated using AI prompts, requesting that data generated mimic real-world, messy data in a SaaS product context. 
 *(Full prompt is uploaded for reference.)*
 
+PostgreSQL database was initially created and managed in pgAdmin 4 and later connected to DBeaver for development, querying, and analysis work.
+
 ## Concepts Explored
 - db creation in pgAdmin 4
 - db Administration: role permissions & access
@@ -11,4 +13,4 @@ Dataset was generated using AI prompts, requesting that data generated mimic rea
 - Clean/Transformation queries
 - Data migration
 
-Created and managed a PostgreSQL database in pgAdmin 4 and connected it to DBeaver for development and querying.
+
