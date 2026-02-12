@@ -10,3 +10,5 @@ Dataset was generated using AI prompts, requesting that data generated mimic rea
 - Update/Alter table
 - Clean/Transformation queries
 - Data migration
+
+Created and managed a PostgreSQL database in pgAdmin 4 and connected it to DBeaver for development and querying.
