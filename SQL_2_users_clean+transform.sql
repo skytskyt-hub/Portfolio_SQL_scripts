@@ -10,18 +10,12 @@ ORDER BY user_id ASC;
 UPDATE users
 SET firstname = INITCAP(firstname), status = LOWER(status);
 
---validate changes
-SELECT user_id, firstname, status
-FROM users
-LIMIT 20;
-
---test normalized status string data will output boolean wit no null values
-SELECT user_id, is_active::boolean 
-FROM (SELECT user_id, status, 
-	CASE WHEN status = 'active' THEN 'true'
-	WHEN status = 'inactive' THEN 'false'
+--test normalized status string data will output boolean with no null values
+SELECT user_id,
+	CASE WHEN status = 'active' THEN TRUE
+	WHEN status = 'inactive' THEN FALSE
 	END AS is_active
-	FROM users) AS subquery
+FROM users
 ORDER BY user_id ASC;
 
 --create new boolean column
@@ -60,10 +54,10 @@ CREATE TABLE countries (
 	country_code3 char(3)
 	);
 
---validate
-SELECT *
-FROM countries
-LIMIT 15;
-
-
-
+INSERT INTO countries (country_id, country_name, region, country_code2, country_code3)
+VALUES 
+	(004,'Afghanistan','Asia','AF','AFG'),
+	(248,'Åland Islands','Europe','AX','ALA'),
+	(008,'Albania','Europe','AL','ALB');
+-- continue with all data ... Dataset was in csv and method used was import/map
+	    
